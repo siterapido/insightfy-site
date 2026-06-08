@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg-base font-sans text-text antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-text;
+  }
+}
