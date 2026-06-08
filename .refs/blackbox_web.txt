@@ -1,0 +1,1595 @@
+BLACKBOX AI 
+
+https://www.blackbox.ai/
+
+Platform
+
+API Frontier + open-source models, one endpoint
+
+https://www.blackbox.ai/api
+
+CLI AI in your terminal
+
+https://www.blackbox.ai/cli
+
+Cloud Always-on agent execution
+
+https://www.blackbox.ai/agents
+
+Pricing
+
+https://www.blackbox.ai/pricing
+
+ 
+
+Docs
+
+https://docs.blackbox.ai/
+
+LOGIN
+
+https://www.blackbox.ai/login
+
+GET ACCESS
+
+https://app.blackbox.ai/
+
+01 API Frontier + open-source models, one endpoint
+
+https://www.blackbox.ai/api
+
+ 
+
+02 CLI AI in your terminal
+
+https://www.blackbox.ai/cli
+
+ 
+
+03 Cloud Always-on agent execution
+
+https://www.blackbox.ai/agents
+
+ 
+
+04 Pricing Simple, usage-based plans
+
+https://www.blackbox.ai/pricing
+
+ 
+
+05 Docs Guides and API reference
+
+https://docs.blackbox.ai/
+
+LOGIN
+
+https://www.blackbox.ai/login
+
+GET ACCESS
+
+https://app.blackbox.ai/
+
+Encrypted Inference
+
+All models. All agents. End-to-end encrypted.
+
+One inference path for every coding agent — Claude, Codex, Blackbox, Grok, and every model on the platform. Encrypted from your device to the model and back, with customer-managed keys and zero data retention. Not even Blackbox can read your prompts or completions.
+
+inference-path end-to-end
+
+Your device
+
+Client
+
+Encrypted
+
+Blackbox
+
+Zero-knowledge proxy
+
+Encrypted
+
+Every Model
+
++24
+
+Prompts · completions — never readable by Blackbox
+
+Teams at Fortune 500 companies that depend on BLACKBOX.AI
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AGENT-01 // REFACTOR
+
+[INIT] Loading codebase context...
+
+[SCAN] 47 files analyzed in 1.2s
+
+[PLAN] Extracting auth middleware → /lib/auth.ts
+
+[EDIT] src/routes/api.ts — removed inline checks
+
+[EDIT] src/middleware/auth.ts — created guard
+
+[TEST] 12/12 passing
+
+[DONE] Refactor complete. PR ready.
+
+AGENT-02 // MIGRATE
+
+[INIT] Connecting to schema registry...
+
+[DIFF] 3 tables modified, 1 added
+
+[GEN] Migration 0047_add_teams.sql
+
+[VALIDATE] Foreign keys ............. OK
+
+[VALIDATE] Indexes .................. OK
+
+[APPLY] Dry run successful
+
+[DONE] Migration staged.
+
+AGENT-03 // TEST-GEN
+
+[SCAN] Uncovered functions: 23
+
+[GEN] tests/auth.test.ts (8 cases)
+
+[GEN] tests/billing.test.ts (6 cases)
+
+[GEN] tests/api.test.ts (9 cases)
+
+[RUN] 23/23 passing
+
+[COV] Coverage: 47% → 89%
+
+[DONE] Test suite committed.
+
+AGENT-04 // DEPLOY
+
+[BUILD] next build .................. OK
+
+[LINT] 0 errors, 0 warnings
+
+[TYPE] tsc --noEmit ................ OK
+
+[PUSH] Deploying to staging...
+
+[DNS] https://staging.blackbox.dev
+
+[HEALTH] 200 OK — 43ms
+
+[DONE] Live on staging.
+
+CHAIRMAN LLM // JUDGE
+
+[RECV] 4 agent submissions received
+
+[EVAL] Agent-01: refactor .......... 9.2/10
+
+[EVAL] Agent-02: migration ......... 8.8/10
+
+[EVAL] Agent-03: test-gen .......... 9.5/10
+
+[EVAL] Agent-04: deploy ............ 9.1/10
+
+[RANK] Best: Agent-03 (test coverage)
+
+[VERDICT] All agents passed. Merging.
+
+SYSTEM // MONITOR
+
+[SYS] CPU: 12% | MEM: 3.2GB / 16GB
+
+[SYS] Active agents: 4
+
+[SYS] Queue depth: 0
+
+[NET] API latency p99: 89ms
+
+[NET] Requests/min: 2,847
+
+[COST] Session: $0.42
+
+[STATUS] All systems nominal.
+
+AGENT-05 // REVIEW
+
+[LOAD] PR #247 — 14 files changed
+
+[SCAN] Security patterns ........... OK
+
+[SCAN] Performance anti-patterns ... 1 found
+
+[WARN] Avoid N+1 in /api/teams.ts:34
+
+[SCAN] Type coverage ............... 100%
+
+[APPROVE] No blockers found
+
+[DONE] Review posted.
+
+AGENT-06 // DOCS
+
+[SCAN] 7 undocumented exports found
+
+[GEN] docs/api-reference.md updated
+
+[GEN] docs/auth-guide.md created
+
+[GEN] README.md — added quickstart
+
+[LINK] Cross-references validated
+
+[SPELL] 0 issues
+
+[DONE] Documentation shipped.
+
+AGENT-07 // SECURITY
+
+[SCAN] Dependencies: 847 packages
+
+[CVE] 0 critical, 0 high, 2 low
+
+[WARN] lodash@4.17.20 — prototype pollution
+
+[AUTH] Token rotation .............. OK
+
+[AUTH] CORS policy ................. OK
+
+[SECRETS] No exposed credentials
+
+[DONE] Audit passed with warnings.
+
+AGENT-08 // PERF
+
+[PROFILE] Lighthouse run complete
+
+[SCORE] Performance: 94 → 99
+
+[FIX] Lazy-loaded 3 heavy components
+
+[FIX] Replaced unoptimized images
+
+[FIX] Tree-shook 47KB dead code
+
+[BUNDLE] 312KB → 198KB (-37%)
+
+[DONE] Performance optimized.
+
+SYSTEM // EVENT LOG
+
+[18:01:04] Agent-01 started
+
+[18:01:04] Agent-02 started
+
+[18:01:05] Agent-03 started
+
+[18:01:05] Agent-04 started
+
+[18:01:12] Agent-01 completed (8.1s)
+
+[18:01:14] Agent-03 completed (9.3s)
+
+[18:01:15] Chairman evaluation begun
+
+[18:01:17] All tasks resolved ✓
+
+SYSTEM // TASK QUEUE
+
+[QUEUE] Active tasks: 4 / 8 slots
+
+[WAIT] 0 pending
+
+[HIST] 247 tasks today
+
+[HIST] Avg duration: 11.3s
+
+[HIST] Success rate: 99.2%
+
+[NEXT] Auto-assign enabled
+
+[STATUS] Queue healthy.
+
+AGENT-09 // SCAFFOLD
+
+[INIT] Template: microservice-ts
+
+[GEN] src/index.ts — entry point
+
+[GEN] src/routes/ — REST handlers
+
+[GEN] src/db/ — Drizzle schema
+
+[GEN] Dockerfile + compose.yml
+
+[GEN] .github/workflows/ci.yml
+
+[DONE] Service scaffolded.
+
+AGENT-10 // TRANSLATE
+
+[SCAN] 134 hardcoded strings found
+
+[GEN] locales/en.json (134 keys)
+
+[GEN] locales/fr.json (auto-translated)
+
+[GEN] locales/de.json (auto-translated)
+
+[WRAP] Components updated with t()
+
+[VALIDATE] No missing keys
+
+[DONE] i18n extraction complete.
+
+AGENT-11 // ROLLBACK
+
+[ERR] deploy-v2.42.0 health check failed
+
+[FETCH] Last stable: deploy-v2.41.0
+
+[DIFF] 3 commits to revert
+
+[REVERT] Applied reverse patches
+
+[BUILD] Rebuild ..................... OK
+
+[PUSH] Deploying rollback...
+
+[DONE] Rolled back to v2.41.0.
+
+SYSTEM // NETWORK
+
+[EDGE] us-east-1 ................... 12ms
+
+[EDGE] eu-west-1 ................... 34ms
+
+[EDGE] ap-southeast-1 .............. 89ms
+
+[CDN] Cache hit rate: 97.3%
+
+[WS] Active connections: 1,247
+
+[TLS] Certificate valid 312 days
+
+[STATUS] Network healthy.
+
+AGENT-12 // LINT-FIX
+
+[SCAN] 2,847 files checked
+
+[FIX] 47 auto-fixable issues
+
+[FIX] Removed unused imports (23)
+
+[FIX] Consistent quote style (18)
+
+[FIX] Trailing commas (6)
+
+[RUN] eslint --fix ................ OK
+
+[DONE] Codebase clean.
+
+AGENT-13 // CANARY
+
+[BUILD] Production build ........... OK
+
+[SPLIT] 5% traffic → canary
+
+[WATCH] Error rate: 0.00%
+
+[WATCH] p99 latency: 47ms
+
+[PROMOTE] Canary → 100%
+
+[CLEANUP] Old revision removed
+
+[DONE] Canary promoted.
+
+AGENT-14 // SCHEMA
+
+[LOAD] OpenAPI spec v3.1
+
+[CHECK] Endpoints: 34 documented
+
+[CHECK] Types match runtime: 34/34
+
+[CHECK] Breaking changes: 0
+
+[GEN] SDK types regenerated
+
+[DIFF] No client changes needed
+
+[DONE] Schema validated.
+
+SYSTEM // HEARTBEAT
+
+[PING] api.blackbox.dev ............ 8ms
+
+[PING] auth.blackbox.dev ........... 11ms
+
+[PING] cdn.blackbox.dev ............ 4ms
+
+[PING] ws.blackbox.dev ............. 9ms
+
+[UPTIME] 99.997% (30d rolling)
+
+[CERTS] All valid > 90 days
+
+[STATUS] All services alive.
+
+Multi-Harness
+
+Any agent. Any model. Run them in parallel.
+
+Claude Code · Codex · Blackbox · Gemini · Goose · +7 more
+
+Run the coding agents your team already trusts on one encrypted inference layer. One bill. One audit trail. Zero data retention.
+
+Get Started
+
+https://app.blackbox.ai/
+
+Agents
+
+Models
+
+Multi-select
+
+Select multiple agents to run in parallel
+
+Claude Code Anthropic
+
+Blackbox Native agent
+
+Codex OpenAI
+
+Gemini Google
+
+Goose Block
+
+Copilot GitHub
+
+Opencode Open-source
+
+Windsurf Codeium
+
+Amp Sourcegraph
+
+Cline Open-source
+
+Cursor Cursor
+
+3 agents selected
+
+Multi-agent mode
+
+12+
+
+agents
+
+24+
+
+models
+
+1
+
+API
+
+0
+
+data retention
+
+Your Agent Platform
+
+Run agents from anywhere, anytime, autonomously.
+
+One platform, six surfaces. Dispatch autonomous coding agents from your terminal, IDE, cloud, API, phone, or browser. They compete, collaborate, and ship code — while you focus on what matters. 
+
+https://www.blackbox.ai/cli
+
+CLI
+
+Your terminal, supercharged
+
+Dispatch competing agents from a single command. They analyze your codebase, generate solutions in parallel, and open PRs — no browser needed.
+
+Multi-agent parallel execution
+
+Automatic PR creation
+
+CI/CD pipeline integration
+
+Try the CLI 
+
+https://www.blackbox.ai/api
+
+API
+
+Programmable agent execution
+
+Integrate agent execution into any workflow with OpenAI-compatible endpoints. Chat completions, multi-agent orchestration, and real-time streaming.
+
+OpenAI-compatible endpoints
+
+Multi-agent orchestration
+
+WebSocket streaming
+
+View API Docs 
+
+https://www.blackbox.ai/ide
+
+IDE
+
+Agents in your editor
+
+Agents work alongside you inside VS Code or Blackbox IDE. Real-time code generation, refactoring, and testing — right where you write code.
+
+Inline code generation
+
+Context-aware refactoring
+
+Integrated test runner
+
+Get the IDE
+
+Chairman LLM
+
+Run Agents in Parallel.
+
+Dispatch the same task to multiple AI agents, then let Chairman LLM evaluate every candidate on correctness, performance, risk, and complexity. Best output wins.
+
+Run Agents
+
+https://www.blackbox.ai/pricing
+
+Read Docs
+
+https://docs.blackbox.ai/
+
+Task
+
+Implement rate limiting middleware with Redis backend for the API gateway
+
+Claude Code winner
+
+I'll use a sliding window algorithm with Redis MULTI/EXEC for atomicity. The middleware checks req count per IP in a 60s window, returns 429 when exceeded.
+
+Codex
+
+Implementing token bucket via Redis INCR + EXPIRE. Each request decrements the bucket; refill rate is configurable per route. Includes retry-after header.
+
+Blackbox
+
+I recommend a distributed rate limiter using Redis sorted sets for precise sliding windows. Supports per-user and per-endpoint limits with graceful degradation.
+
+Winner Selected
+
+claude code
+
+confidence: 0.94
+
+TESTS: 46/46 correctness: 0.97
+
+PR #218 opened
+
+src/middleware/rate-limit.ts+47 -12
+
+src/config/redis.ts+18 -3
+
+tests/rate-limit.test.ts+94 -0
+
+3 files changed+159 -15
+
+Agent Status
+
+Agents
+
+Claude Code queued
+
+Codex queued
+
+Blackbox queued
+
+Execution
+
+3 agents in parallel
+
+Estimated Time
+
+Sequential~18 min
+
+Parallel~6 min
+
+Chairman LLM
+
+Waiting for agents
+
+You
+
+▌
+
+BlackBox
+
+E2E Encrypted
+
+Multi-Agent
+
+Send
+
+Consensus
+
+Waiting for agents
+
+Parallel Dispatch
+
+Same task, multiple agents. Blackbox, Claude Code, and Codex work simultaneously — each producing an independent solution.
+
+Weighted Evaluation
+
+Chairman LLM scores every candidate across correctness, performance, risk, and complexity — fully configurable per task.
+
+Ship Automatically
+
+The winning solution is packaged into a PR with test results, evaluation breakdown, and diff — ready to merge in one click.
+
+Deploy Your Agent Army
+
+https://www.blackbox.ai/pricing
+
+Read Docs
+
+https://docs.blackbox.ai/
+
+AGENT-01 // REFACTOR
+
+[INIT] Loading codebase context...
+
+[SCAN] 47 files analyzed in 1.2s
+
+[PLAN] Extracting auth middleware → /lib/auth.ts
+
+[EDIT] src/routes/api.ts — removed inline checks
+
+[EDIT] src/middleware/auth.ts — created guard
+
+[TEST] 12/12 passing
+
+[DONE] Refactor complete. PR ready.
+
+AGENT-02 // MIGRATE
+
+[INIT] Connecting to schema registry...
+
+[DIFF] 3 tables modified, 1 added
+
+[GEN] Migration 0047_add_teams.sql
+
+[VALIDATE] Foreign keys ............. OK
+
+[VALIDATE] Indexes .................. OK
+
+[APPLY] Dry run successful
+
+[DONE] Migration staged.
+
+AGENT-03 // TEST-GEN
+
+[SCAN] Uncovered functions: 23
+
+[GEN] tests/auth.test.ts (8 cases)
+
+[GEN] tests/billing.test.ts (6 cases)
+
+[GEN] tests/api.test.ts (9 cases)
+
+[RUN] 23/23 passing
+
+[COV] Coverage: 47% → 89%
+
+[DONE] Test suite committed.
+
+AGENT-04 // DEPLOY
+
+[BUILD] next build .................. OK
+
+[LINT] 0 errors, 0 warnings
+
+[TYPE] tsc --noEmit ................ OK
+
+[PUSH] Deploying to staging...
+
+[DNS] https://staging.blackbox.dev
+
+[HEALTH] 200 OK — 43ms
+
+[DONE] Live on staging.
+
+CHAIRMAN LLM // JUDGE
+
+[RECV] 4 agent submissions received
+
+[EVAL] Agent-01: refactor .......... 9.2/10
+
+[EVAL] Agent-02: migration ......... 8.8/10
+
+[EVAL] Agent-03: test-gen .......... 9.5/10
+
+[EVAL] Agent-04: deploy ............ 9.1/10
+
+[RANK] Best: Agent-03 (test coverage)
+
+[VERDICT] All agents passed. Merging.
+
+SYSTEM // MONITOR
+
+[SYS] CPU: 12% | MEM: 3.2GB / 16GB
+
+[SYS] Active agents: 4
+
+[SYS] Queue depth: 0
+
+[NET] API latency p99: 89ms
+
+[NET] Requests/min: 2,847
+
+[COST] Session: $0.42
+
+[STATUS] All systems nominal.
+
+AGENT-05 // REVIEW
+
+[LOAD] PR #247 — 14 files changed
+
+[SCAN] Security patterns ........... OK
+
+[SCAN] Performance anti-patterns ... 1 found
+
+[WARN] Avoid N+1 in /api/teams.ts:34
+
+[SCAN] Type coverage ............... 100%
+
+[APPROVE] No blockers found
+
+[DONE] Review posted.
+
+AGENT-06 // DOCS
+
+[SCAN] 7 undocumented exports found
+
+[GEN] docs/api-reference.md updated
+
+[GEN] docs/auth-guide.md created
+
+[GEN] README.md — added quickstart
+
+[LINK] Cross-references validated
+
+[SPELL] 0 issues
+
+[DONE] Documentation shipped.
+
+AGENT-07 // SECURITY
+
+[SCAN] Dependencies: 847 packages
+
+[CVE] 0 critical, 0 high, 2 low
+
+[WARN] lodash@4.17.20 — prototype pollution
+
+[AUTH] Token rotation .............. OK
+
+[AUTH] CORS policy ................. OK
+
+[SECRETS] No exposed credentials
+
+[DONE] Audit passed with warnings.
+
+AGENT-08 // PERF
+
+[PROFILE] Lighthouse run complete
+
+[SCORE] Performance: 94 → 99
+
+[FIX] Lazy-loaded 3 heavy components
+
+[FIX] Replaced unoptimized images
+
+[FIX] Tree-shook 47KB dead code
+
+[BUNDLE] 312KB → 198KB (-37%)
+
+[DONE] Performance optimized.
+
+SYSTEM // EVENT LOG
+
+[18:01:04] Agent-01 started
+
+[18:01:04] Agent-02 started
+
+[18:01:05] Agent-03 started
+
+[18:01:05] Agent-04 started
+
+[18:01:12] Agent-01 completed (8.1s)
+
+[18:01:14] Agent-03 completed (9.3s)
+
+[18:01:15] Chairman evaluation begun
+
+[18:01:17] All tasks resolved ✓
+
+SYSTEM // TASK QUEUE
+
+[QUEUE] Active tasks: 4 / 8 slots
+
+[WAIT] 0 pending
+
+[HIST] 247 tasks today
+
+[HIST] Avg duration: 11.3s
+
+[HIST] Success rate: 99.2%
+
+[NEXT] Auto-assign enabled
+
+[STATUS] Queue healthy.
+
+AGENT-09 // SCAFFOLD
+
+[INIT] Template: microservice-ts
+
+[GEN] src/index.ts — entry point
+
+[GEN] src/routes/ — REST handlers
+
+[GEN] src/db/ — Drizzle schema
+
+[GEN] Dockerfile + compose.yml
+
+[GEN] .github/workflows/ci.yml
+
+[DONE] Service scaffolded.
+
+AGENT-10 // TRANSLATE
+
+[SCAN] 134 hardcoded strings found
+
+[GEN] locales/en.json (134 keys)
+
+[GEN] locales/fr.json (auto-translated)
+
+[GEN] locales/de.json (auto-translated)
+
+[WRAP] Components updated with t()
+
+[VALIDATE] No missing keys
+
+[DONE] i18n extraction complete.
+
+AGENT-11 // ROLLBACK
+
+[ERR] deploy-v2.42.0 health check failed
+
+[FETCH] Last stable: deploy-v2.41.0
+
+[DIFF] 3 commits to revert
+
+[REVERT] Applied reverse patches
+
+[BUILD] Rebuild ..................... OK
+
+[PUSH] Deploying rollback...
+
+[DONE] Rolled back to v2.41.0.
+
+SYSTEM // NETWORK
+
+[EDGE] us-east-1 ................... 12ms
+
+[EDGE] eu-west-1 ................... 34ms
+
+[EDGE] ap-southeast-1 .............. 89ms
+
+[CDN] Cache hit rate: 97.3%
+
+[WS] Active connections: 1,247
+
+[TLS] Certificate valid 312 days
+
+[STATUS] Network healthy.
+
+AGENT-12 // LINT-FIX
+
+[SCAN] 2,847 files checked
+
+[FIX] 47 auto-fixable issues
+
+[FIX] Removed unused imports (23)
+
+[FIX] Consistent quote style (18)
+
+[FIX] Trailing commas (6)
+
+[RUN] eslint --fix ................ OK
+
+[DONE] Codebase clean.
+
+AGENT-13 // CANARY
+
+[BUILD] Production build ........... OK
+
+[SPLIT] 5% traffic → canary
+
+[WATCH] Error rate: 0.00%
+
+[WATCH] p99 latency: 47ms
+
+[PROMOTE] Canary → 100%
+
+[CLEANUP] Old revision removed
+
+[DONE] Canary promoted.
+
+AGENT-14 // SCHEMA
+
+[LOAD] OpenAPI spec v3.1
+
+[CHECK] Endpoints: 34 documented
+
+[CHECK] Types match runtime: 34/34
+
+[CHECK] Breaking changes: 0
+
+[GEN] SDK types regenerated
+
+[DIFF] No client changes needed
+
+[DONE] Schema validated.
+
+SYSTEM // HEARTBEAT
+
+[PING] api.blackbox.dev ............ 8ms
+
+[PING] auth.blackbox.dev ........... 11ms
+
+[PING] cdn.blackbox.dev ............ 4ms
+
+[PING] ws.blackbox.dev ............. 9ms
+
+[UPTIME] 99.997% (30d rolling)
+
+[CERTS] All valid > 90 days
+
+[STATUS] All services alive.
+
+Multi-Harness
+
+Every agent harness. One platform.
+
+Claude Code, Codex, Blackbox — access every coding agent through a single API. Compare harnesses side by side and ship the best result.
+
+Claude Code
+
+src/middleware/rate-limiter.ts+ 35- 8
+
+Codex
+
+src/lib/cache.ts+ 30- 9
+
+Blackbox
+
+src/hooks/use-debounce.ts+ 27- 8
+
+Claude Code 0.94 Codex 0.81 Blackbox 0.78
+
+src/middleware/rate-limiter.ts+ 35- 8
+
+1 import { Redis } from '@upstash/redis';
+
+2 import type { NextRequest } from 'next/server';
+
+3
+
+4- const RATE_LIMIT = 100;
+
+5- const WINDOW_MS = 60_000;
+
+6+ interface SlidingWindowConfig {
+
+7+ maxRequests: number;
+
+8+ windowMs: number;
+
+9+ keyPrefix?: string;
+
+10+}
+
+11+
+
+12+ const DEFAULT_CONFIG: SlidingWindowConfig = {
+
+13+ maxRequests: 100,
+
+14+ windowMs: 60_000,
+
+15+ keyPrefix: 'rl:sw',
+
+16+};
+
+17
+
+18- export async function rateLimit(req) {
+
+19- const ip = req.headers.get('x-forwarded-for');
+
+20- const count = await redis.incr(ip);
+
+21- if (count === 1) await redis.expire(ip, 60);
+
+22- return count <= RATE_LIMIT;
+
+23-}
+
+24+ export async function rateLimit(
+
+25+ req: NextRequest,
+
+26+ config = DEFAULT_CONFIG
+
+27+) {
+
+28+ const ip = req.headers.get('x-forwarded-for') ?? '127.0.0.1';
+
+29+ const now = Date.now();
+
+30+ const windowStart = now - config.windowMs;
+
+31+ const key = 
+
+${config.keyPrefix}:${ip}
+
+;
+
+32+
+
+33+ // Atomic sliding window via MULTI
+
+34+ const pipeline = redis.multi();
+
+35+ pipeline.zremrangebyscore(key, 0, windowStart);
+
+36+ pipeline.zadd(key, { score: now, member: crypto.randomUUID() });
+
+37+ pipeline.zcard(key);
+
+38+ pipeline.expire(key, Math.ceil(config.windowMs / 1000));
+
+39+ const results = await pipeline.exec();
+
+40+
+
+41+ const count = results[2] as number;
+
+42+ return {
+
+43+ allowed: count <= config.maxRequests,
+
+44+ remaining: Math.max(0, config.maxRequests - count),
+
+45+ resetAt: now + config.windowMs,
+
+46+ };
+
+47+}
+
+AGENT-01 // REFACTOR
+
+[INIT] Loading codebase context...
+
+[SCAN] 47 files analyzed in 1.2s
+
+[PLAN] Extracting auth middleware → /lib/auth.ts
+
+[EDIT] src/routes/api.ts — removed inline checks
+
+[EDIT] src/middleware/auth.ts — created guard
+
+[TEST] 12/12 passing
+
+[DONE] Refactor complete. PR ready.
+
+AGENT-02 // MIGRATE
+
+[INIT] Connecting to schema registry...
+
+[DIFF] 3 tables modified, 1 added
+
+[GEN] Migration 0047_add_teams.sql
+
+[VALIDATE] Foreign keys ............. OK
+
+[VALIDATE] Indexes .................. OK
+
+[APPLY] Dry run successful
+
+[DONE] Migration staged.
+
+AGENT-03 // TEST-GEN
+
+[SCAN] Uncovered functions: 23
+
+[GEN] tests/auth.test.ts (8 cases)
+
+[GEN] tests/billing.test.ts (6 cases)
+
+[GEN] tests/api.test.ts (9 cases)
+
+[RUN] 23/23 passing
+
+[COV] Coverage: 47% → 89%
+
+[DONE] Test suite committed.
+
+AGENT-04 // DEPLOY
+
+[BUILD] next build .................. OK
+
+[LINT] 0 errors, 0 warnings
+
+[TYPE] tsc --noEmit ................ OK
+
+[PUSH] Deploying to staging...
+
+[DNS] https://staging.blackbox.dev
+
+[HEALTH] 200 OK — 43ms
+
+[DONE] Live on staging.
+
+CHAIRMAN LLM // JUDGE
+
+[RECV] 4 agent submissions received
+
+[EVAL] Agent-01: refactor .......... 9.2/10
+
+[EVAL] Agent-02: migration ......... 8.8/10
+
+[EVAL] Agent-03: test-gen .......... 9.5/10
+
+[EVAL] Agent-04: deploy ............ 9.1/10
+
+[RANK] Best: Agent-03 (test coverage)
+
+[VERDICT] All agents passed. Merging.
+
+SYSTEM // MONITOR
+
+[SYS] CPU: 12% | MEM: 3.2GB / 16GB
+
+[SYS] Active agents: 4
+
+[SYS] Queue depth: 0
+
+[NET] API latency p99: 89ms
+
+[NET] Requests/min: 2,847
+
+[COST] Session: $0.42
+
+[STATUS] All systems nominal.
+
+AGENT-05 // REVIEW
+
+[LOAD] PR #247 — 14 files changed
+
+[SCAN] Security patterns ........... OK
+
+[SCAN] Performance anti-patterns ... 1 found
+
+[WARN] Avoid N+1 in /api/teams.ts:34
+
+[SCAN] Type coverage ............... 100%
+
+[APPROVE] No blockers found
+
+[DONE] Review posted.
+
+AGENT-06 // DOCS
+
+[SCAN] 7 undocumented exports found
+
+[GEN] docs/api-reference.md updated
+
+[GEN] docs/auth-guide.md created
+
+[GEN] README.md — added quickstart
+
+[LINK] Cross-references validated
+
+[SPELL] 0 issues
+
+[DONE] Documentation shipped.
+
+AGENT-07 // SECURITY
+
+[SCAN] Dependencies: 847 packages
+
+[CVE] 0 critical, 0 high, 2 low
+
+[WARN] lodash@4.17.20 — prototype pollution
+
+[AUTH] Token rotation .............. OK
+
+[AUTH] CORS policy ................. OK
+
+[SECRETS] No exposed credentials
+
+[DONE] Audit passed with warnings.
+
+AGENT-08 // PERF
+
+[PROFILE] Lighthouse run complete
+
+[SCORE] Performance: 94 → 99
+
+[FIX] Lazy-loaded 3 heavy components
+
+[FIX] Replaced unoptimized images
+
+[FIX] Tree-shook 47KB dead code
+
+[BUNDLE] 312KB → 198KB (-37%)
+
+[DONE] Performance optimized.
+
+SYSTEM // EVENT LOG
+
+[18:01:04] Agent-01 started
+
+[18:01:04] Agent-02 started
+
+[18:01:05] Agent-03 started
+
+[18:01:05] Agent-04 started
+
+[18:01:12] Agent-01 completed (8.1s)
+
+[18:01:14] Agent-03 completed (9.3s)
+
+[18:01:15] Chairman evaluation begun
+
+[18:01:17] All tasks resolved ✓
+
+SYSTEM // TASK QUEUE
+
+[QUEUE] Active tasks: 4 / 8 slots
+
+[WAIT] 0 pending
+
+[HIST] 247 tasks today
+
+[HIST] Avg duration: 11.3s
+
+[HIST] Success rate: 99.2%
+
+[NEXT] Auto-assign enabled
+
+[STATUS] Queue healthy.
+
+AGENT-09 // SCAFFOLD
+
+[INIT] Template: microservice-ts
+
+[GEN] src/index.ts — entry point
+
+[GEN] src/routes/ — REST handlers
+
+[GEN] src/db/ — Drizzle schema
+
+[GEN] Dockerfile + compose.yml
+
+[GEN] .github/workflows/ci.yml
+
+[DONE] Service scaffolded.
+
+AGENT-10 // TRANSLATE
+
+[SCAN] 134 hardcoded strings found
+
+[GEN] locales/en.json (134 keys)
+
+[GEN] locales/fr.json (auto-translated)
+
+[GEN] locales/de.json (auto-translated)
+
+[WRAP] Components updated with t()
+
+[VALIDATE] No missing keys
+
+[DONE] i18n extraction complete.
+
+AGENT-11 // ROLLBACK
+
+[ERR] deploy-v2.42.0 health check failed
+
+[FETCH] Last stable: deploy-v2.41.0
+
+[DIFF] 3 commits to revert
+
+[REVERT] Applied reverse patches
+
+[BUILD] Rebuild ..................... OK
+
+[PUSH] Deploying rollback...
+
+[DONE] Rolled back to v2.41.0.
+
+SYSTEM // NETWORK
+
+[EDGE] us-east-1 ................... 12ms
+
+[EDGE] eu-west-1 ................... 34ms
+
+[EDGE] ap-southeast-1 .............. 89ms
+
+[CDN] Cache hit rate: 97.3%
+
+[WS] Active connections: 1,247
+
+[TLS] Certificate valid 312 days
+
+[STATUS] Network healthy.
+
+AGENT-12 // LINT-FIX
+
+[SCAN] 2,847 files checked
+
+[FIX] 47 auto-fixable issues
+
+[FIX] Removed unused imports (23)
+
+[FIX] Consistent quote style (18)
+
+[FIX] Trailing commas (6)
+
+[RUN] eslint --fix ................ OK
+
+[DONE] Codebase clean.
+
+AGENT-13 // CANARY
+
+[BUILD] Production build ........... OK
+
+[SPLIT] 5% traffic → canary
+
+[WATCH] Error rate: 0.00%
+
+[WATCH] p99 latency: 47ms
+
+[PROMOTE] Canary → 100%
+
+[CLEANUP] Old revision removed
+
+[DONE] Canary promoted.
+
+AGENT-14 // SCHEMA
+
+[LOAD] OpenAPI spec v3.1
+
+[CHECK] Endpoints: 34 documented
+
+[CHECK] Types match runtime: 34/34
+
+[CHECK] Breaking changes: 0
+
+[GEN] SDK types regenerated
+
+[DIFF] No client changes needed
+
+[DONE] Schema validated.
+
+SYSTEM // HEARTBEAT
+
+[PING] api.blackbox.dev ............ 8ms
+
+[PING] auth.blackbox.dev ........... 11ms
+
+[PING] cdn.blackbox.dev ............ 4ms
+
+[PING] ws.blackbox.dev ............. 9ms
+
+[UPTIME] 99.997% (30d rolling)
+
+[CERTS] All valid > 90 days
+
+[STATUS] All services alive.
+
+Get started
+
+Start building with BLACKBOX AI.
+
+Multi-agent execution, AI-native IDE, CLI, API, and mobile — all free to start.
+
+12+ agents
+
+24+ models
+
+E2EE inference
+
+One API
+
+Get Started Free
+
+https://www.blackbox.ai/signup
+
+View Pricing
+
+https://www.blackbox.ai/pricing
+
+ 
+
+https://www.blackbox.ai/
+
+Resources 
+
+Pricing
+
+https://www.blackbox.ai/pricing
+
+ 
+
+Microsoft Partner
+
+https://www.blackbox.ai/microsoft-partner
+
+ 
+
+Docs
+
+https://docs.blackbox.ai/
+
+ 
+
+X (Twitter)
+
+https://x.com/blackboxai
+
+ 
+
+Careers
+
+https://www.blackbox.ai/careers
+
+Product 
+
+Cloud
+
+https://www.blackbox.ai/agents
+
+ 
+
+IDE
+
+https://www.blackbox.ai/ide
+
+ 
+
+CLI
+
+https://www.blackbox.ai/cli
+
+ 
+
+API
+
+https://www.blackbox.ai/api
+
+ 
+
+Mobile
+
+https://www.blackbox.ai/mobile
+
+ 
+
+Builder
+
+https://www.blackbox.ai/builder
+
+ 
+
+VS Code
+
+https://www.blackbox.ai/vs-code
+
+T&C 
+
+Terms of Service
+
+https://www.blackbox.ai/terms-of-service
+
+ 
+
+Privacy Policy
+
+https://www.blackbox.ai/privacy-policy
+
+ 
+
+Contact Us
+
+https://product.blackbox.ai/support
+
+© 2026 BlackBox. 535 Mission Street, San Francisco, CA, USA
