@@ -1,0 +1,8 @@
+{
+  "name": "@insightfy/crm",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"CRM app not implemented yet — see apps/crm/README.md\""
+  }
+}

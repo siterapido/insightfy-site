@@ -6,6 +6,7 @@
 "use client";
 
 import * as React from "react";
+import { motion } from "framer-motion";
 import { Button, Card, Container, SectionHeading } from "@insightfy/ui";
 import type { Dictionary } from "@/i18n/types";
 
@@ -18,45 +19,99 @@ export function FinalCta({ dict }: FinalCtaProps) {
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    // UI-only stub: no network request. A later agent wires the backend.
     setSubmitted(true);
   }
 
+  const labelClass = "font-mono text-xs uppercase tracking-widest text-muted";
   const inputClass =
-    "w-full rounded-lg border border-border bg-bg-base px-3 py-2 text-sm text-text outline-none placeholder:text-muted focus:border-accent";
+    "w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm text-text outline-none transition-colors placeholder:text-muted/60 focus:border-accent focus:ring-1 focus:ring-accent";
 
   return (
-    <section id="contato" className="py-20 sm:py-28">
+    <section id="contato" className="py-24 sm:py-32">
       <Container className="flex flex-col items-center gap-10">
         <SectionHeading centered title={dict.title} subtitle={dict.subtitle} />
-        <Card className="w-full max-w-xl">
-          {submitted ? (
-            <p className="py-8 text-center font-mono text-sm text-diff-add">
-              {dict.successMessage}
-            </p>
-          ) : (
-            <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <input className={inputClass} placeholder={dict.form.name} aria-label={dict.form.name} />
-                <input
-                  className={inputClass}
-                  type="email"
-                  placeholder={dict.form.email}
-                  aria-label={dict.form.email}
-                />
-              </div>
-              <input className={inputClass} placeholder={dict.form.company} aria-label={dict.form.company} />
-              <textarea
-                className={inputClass}
-                rows={4}
-                placeholder={dict.form.message}
-                aria-label={dict.form.message}
-              />
-              <Button type="submit" variant="primary">
-                {dict.form.submit}
-              </Button>
-            </form>
-          )}
-        </Card>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="w-full max-w-xl"
+        >
+          <Card className="w-full">
+            {submitted ? (
+              <p
+                role="status"
+                aria-live="polite"
+                className="py-10 text-center font-mono text-sm text-diff-add"
+              >
+                {dict.successMessage}
+              </p>
+            ) : (
+              <form className="flex flex-col gap-5" onSubmit={handleSubmit} noValidate>
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <div className="flex flex-col gap-1.5">
+                    <label htmlFor="contact-name" className={labelClass}>
+                      {dict.form.name}
+                    </label>
+                    <input
+                      id="contact-name"
+                      name="name"
+                      type="text"
+                      required
+                      autoComplete="name"
+                      className={inputClass}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-1.5">
+                    <label htmlFor="contact-email" className={labelClass}>
+                      {dict.form.email}
+                    </label>
+                    <input
+                      id="contact-email"
+                      name="email"
+                      type="email"
+                      required
+                      autoComplete="email"
+                      className={inputClass}
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-1.5">
+                  <label htmlFor="contact-company" className={labelClass}>
+                    {dict.form.company}
+                  </label>
+                  <input
+                    id="contact-company"
+                    name="company"
+                    type="text"
+                    autoComplete="organization"
+                    className={inputClass}
+                  />
+                </div>
+
+                <div className="flex flex-col gap-1.5">
+                  <label htmlFor="contact-message" className={labelClass}>
+                    {dict.form.message}
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows={4}
+                    required
+                    className={`${inputClass} resize-y`}
+                  />
+                </div>
+
+                <Button type="submit" variant="primary" className="mt-1 w-full sm:w-auto sm:self-end">
+                  {dict.form.submit}
+                </Button>
+              </form>
+            )}
+          </Card>
+        </motion.div>
       </Container>
     </section>
   );

@@ -15,16 +15,18 @@ export const TerminalPanel = React.forwardRef<HTMLDivElement, TerminalPanelProps
     <div
       ref={ref}
       className={cn(
-        "overflow-hidden rounded-xl border border-border bg-surface shadow-2xl shadow-black/40",
+        "overflow-hidden rounded-lg border border-white/[0.06] bg-surface shadow-[0_24px_48px_-12px_rgba(0,0,0,0.5),0_1px_0_0_rgba(255,255,255,0.04)_inset] transition-[border-color,box-shadow] duration-300",
         className,
       )}
       {...props}
     >
-      <div className="flex items-center gap-2 border-b border-border bg-white/[0.02] px-4 py-3">
-        <span className="h-3 w-3 rounded-full bg-diff-remove" />
-        <span className="h-3 w-3 rounded-full bg-[#fbbf24]" />
-        <span className="h-3 w-3 rounded-full bg-diff-add" />
-        <span className="ml-3 truncate font-mono text-xs text-muted">{title}</span>
+      <div className="flex items-center gap-2 border-b border-white/[0.06] bg-white/[0.015] px-4 py-3">
+        <span className="h-2.5 w-2.5 rounded-full bg-diff-remove/80" />
+        <span className="h-2.5 w-2.5 rounded-full bg-[#fbbf24]/80" />
+        <span className="h-2.5 w-2.5 rounded-full bg-diff-add/80" />
+        <span className="ml-3 truncate font-mono text-[11px] tracking-wide text-muted">
+          {title}
+        </span>
       </div>
       <div className="p-4 font-mono text-sm leading-relaxed text-text">{children}</div>
     </div>

@@ -11,11 +11,13 @@ export interface ButtonProps
 }
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base disabled:pointer-events-none disabled:opacity-50";
+  "inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium tracking-tight transition-[background-color,border-color,box-shadow,transform] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base disabled:pointer-events-none disabled:opacity-50";
 
 const variants: Record<ButtonVariant, string> = {
-  primary: "bg-white text-black hover:bg-white/90",
-  secondary: "border border-border bg-surface text-text hover:bg-white/5",
+  primary:
+    "bg-white text-black shadow-[0_1px_0_0_rgba(255,255,255,0.2)_inset] hover:bg-white/92 hover:shadow-[0_0_24px_-4px_rgba(255,255,255,0.15)] active:scale-[0.98]",
+  secondary:
+    "border border-white/[0.08] bg-surface text-text hover:border-white/[0.14] hover:bg-white/[0.04] active:scale-[0.98]",
 };
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(

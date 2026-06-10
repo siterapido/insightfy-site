@@ -12,6 +12,8 @@ importers:
         specifier: ^2.5.0
         version: 2.9.16
 
+  apps/crm: {}
+
   apps/web:
     dependencies:
       '@insightfy/config':
@@ -75,6 +77,8 @@ importers:
       typescript-eslint:
         specifier: ^8.0.0
         version: 8.60.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
+
+  packages/db: {}
 
   packages/ui:
     dependencies:

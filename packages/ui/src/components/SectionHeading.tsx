@@ -28,11 +28,11 @@ export function SectionHeading({
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="text-balance text-3xl font-bold tracking-tight text-text sm:text-4xl">
+      <h2 className="font-display text-balance text-[clamp(2.25rem,5vw,3.75rem)] font-bold leading-[1.06] tracking-tight text-text">
         {title}
       </h2>
       {subtitle ? (
-        <p className="max-w-2xl text-base text-muted">{subtitle}</p>
+        <p className="max-w-2xl text-base leading-relaxed text-muted">{subtitle}</p>
       ) : null}
     </div>
   );

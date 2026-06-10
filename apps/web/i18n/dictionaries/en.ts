@@ -1,6 +1,6 @@
 import type { Dictionary } from "../types";
 
-/** EN copy — professional placeholders, refined later by the copy agent. */
+/** EN copy — conversion copy by the copy agent. */
 export const en: Dictionary = {
   nav: {
     links: [
@@ -12,69 +12,108 @@ export const en: Dictionary = {
     cta: "Book a call",
   },
   hero: {
-    badge: "Software house · Systems + AI Agents",
-    titleLines: ["Custom engineering", "and AI agents in production"],
+    badge: "Software house · AI & systems",
+    titleLines: [
+      "Custom software,",
+      "powered by AI agents",
+      "that do the work for you.",
+    ],
     subtitle:
-      "We turn manual processes and ideas into custom systems and AI agents that actually run — from MVP to production.",
+      "Insightfy designs and ships production-grade web apps, SaaS, and AI automation — built around your process, not someone else's template. From first screen to deploy.",
     ctaPrimary: "Book a diagnosis",
     ctaSecondary: "See cases",
-    terminalTitle: "insightfy@deploy:~",
+    terminalTitle: "insightfy@prod ~ %",
   },
   socialProof: {
-    label: "Teams and companies that trust Insightfy",
+    label: "Founders and teams who traded spreadsheets and duct tape for real software.",
   },
   pillars: {
-    title: "What we build",
-    subtitle: "Three connected fronts: solid engineering, applied AI, and our own products.",
+    title: "What we deliver",
+    subtitle:
+      "Three fronts that work together: engineering that survives production, AI that handles real work, and products we build and use ourselves.",
     items: {
       systems: {
         title: "Custom systems",
         description:
-          "Web and SaaS applications designed for your process, from MVP to production.",
-        bullets: ["Web & SaaS", "Integrations & APIs", "MVP to scale"],
+          "You describe the process, we build the system it deserves. Web and SaaS designed from MVP to scale — no generic-tool handcuffs.",
+        bullets: [
+          "Web apps and SaaS platforms",
+          "Integrations with ERP, CRM, and APIs",
+          "From validated MVP to production",
+        ],
       },
       agents: {
-        title: "AI agents",
+        title: "AI agents & automation",
         description:
-          "Intelligent automation for support, data, operations, and integrations.",
-        bullets: ["Support", "Data analysis", "Workflow automation"],
+          "The repetitive tasks eating your team's day become agents that run 24/7. Support, data, and operations on autopilot — with you in control.",
+        bullets: [
+          "Automated support and triage",
+          "On-demand data analysis and reports",
+          "Cross-system workflow automation",
+        ],
       },
       products: {
         title: "Our own products",
-        description: "Insightfy's CRM and SaaS tools, in active development.",
-        bullets: ["CRM", "SaaS tools", "Open roadmap"],
+        description:
+          "We don't just build for clients — we build for ourselves. Insightfy's CRM and SaaS tools, in active development and ready for your team to try.",
+        bullets: [
+          "In-house CRM, always evolving",
+          "SaaS productivity tools",
+          "Open roadmap, early access",
+        ],
       },
     },
   },
   agentsDemo: {
     title: "Insightfy agents at work",
-    subtitle: "Live logs of agents solving client cases in parallel.",
+    subtitle:
+      "It's not magic, it's logs. Watch the agents solve real client cases — support, data, automation, and integration — in parallel.",
     agents: [
       {
-        name: "AGENT-01 // SUPPORT",
-        task: "Ticket triage and replies",
+        name: "Agent · Support",
+        task: "Receives, classifies, and answers tickets before your team opens their inbox.",
         logs: [
-          "› receiving ticket #4821",
-          "› classifying intent: support",
-          "✓ reply sent in 1.2s",
+          "[INIT] connecting to support inbox",
+          "[SCAN] new ticket #4821 · priority: high",
+          "[GEN] intent: invoice copy request",
+          "[GEN] drafting reply from knowledge base",
+          "[DONE] reply sent in 1.2s",
+          "[WARN] tax case escalated to human",
         ],
       },
       {
-        name: "AGENT-02 // DATA",
-        task: "Reporting pipeline",
+        name: "Agent · Data",
+        task: "Consolidates scattered sources and delivers the report ready every Monday.",
         logs: [
-          "› extracting period metrics",
-          "› consolidating 12 sources",
-          "✓ report generated",
+          "[INIT] starting weekly pipeline",
+          "[SCAN] reading 12 sources (ERP, ads, sheets)",
+          "[GEN] consolidating 48,320 rows",
+          "[GEN] computing KPIs and deltas",
+          "[DONE] dashboard refreshed",
+          "[DONE] summary posted to Slack",
         ],
       },
       {
-        name: "AGENT-03 // INTEGRATION",
-        task: "Cross-system sync",
+        name: "Agent · Automation",
+        task: "Takes manual data entry and billing off your operations team's back.",
         logs: [
-          "› connecting ERP ↔ CRM",
-          "› mapping 340 records",
-          "✓ sync complete",
+          "[INIT] trigger: new order approved",
+          "[GEN] issuing invoice and billing",
+          "[GEN] notifying customer via WhatsApp",
+          "[SCAN] checking overdue payments",
+          "[DONE] 37 tasks completed today",
+          "[WARN] 2 cases awaiting approval",
+        ],
+      },
+      {
+        name: "Agent · Integration",
+        task: "Keeps ERP, CRM, and your store speaking the same language, in real time.",
+        logs: [
+          "[INIT] handshake ERP ↔ CRM ↔ store",
+          "[SCAN] mapping 340 new records",
+          "[GEN] normalizing mismatched fields",
+          "[DONE] sync complete",
+          "[DONE] inventory updated across 3 systems",
         ],
       },
     ],
@@ -82,70 +121,101 @@ export const en: Dictionary = {
   metrics: {
     items: [
       { value: "30+", label: "Projects delivered" },
+      { value: "98%", label: "Satisfied clients" },
       { value: "99.9%", label: "Production uptime" },
-      { value: "10x", label: "Faster with agents" },
-      { value: "24/7", label: "Active automations" },
+      { value: "< 24h", label: "To first reply" },
     ],
   },
   process: {
     title: "How we work",
-    subtitle: "A lean process, from diagnosis to continuous delivery.",
+    subtitle:
+      "No endless briefs, no black box. A lean process, from diagnosis to deploy — and beyond.",
     steps: [
-      { title: "Diagnosis", description: "We understand your process, pains, and goals." },
-      { title: "Architecture", description: "We design the solution and delivery plan." },
-      { title: "Build", description: "We develop with solid engineering and AI agents." },
-      { title: "Operate", description: "We ship to production and keep improving." },
+      {
+        title: "Diagnosis",
+        description:
+          "We dig into your process, pains, and goals. You leave with a clear scope and path.",
+      },
+      {
+        title: "Design",
+        description:
+          "We design the architecture and flows. You approve before a single line of code exists.",
+      },
+      {
+        title: "Build",
+        description:
+          "We develop with solid engineering and AI agents, shipping work you follow closely.",
+      },
+      {
+        title: "Deploy & evolve",
+        description:
+          "We ship to production and stay on board — measuring, tuning, and growing the system.",
+      },
     ],
   },
   cases: {
     title: "Cases & portfolio",
-    subtitle: "Examples of systems and agents we've built.",
+    subtitle:
+      "Real problems, real results. Examples of what we've built across all three fronts.",
     items: [
       {
-        title: "Support automation",
-        summary: "An AI agent that cut ticket response time.",
+        title: "Support that replies in seconds",
+        summary:
+          "An AI agent took over ticket triage for an e-commerce brand and dropped first-response time from hours to seconds, freeing the team for complex cases.",
         tags: ["AI", "Support", "Integration"],
       },
       {
-        title: "Custom SaaS platform",
-        summary: "From MVP to production for a B2B client.",
+        title: "SaaS platform from zero to production",
+        summary:
+          "We took a B2B product from idea to reality: from an MVP validated in weeks to a production platform with paying customers and scale.",
         tags: ["SaaS", "Web", "MVP"],
       },
       {
-        title: "Data pipeline",
-        summary: "Source consolidation and automated reporting.",
+        title: "Data consolidated on autopilot",
+        summary:
+          "We unified scattered sources into a single pipeline with automated reporting, cutting hours of manual spreadsheet work every week.",
         tags: ["Data", "Automation"],
       },
     ],
   },
   finalCta: {
-    title: "Let's build your next system",
-    subtitle: "Tell us your challenge. We'll reply with a diagnosis and next steps.",
+    title: "Ready to get your next system off the ground?",
+    subtitle:
+      "Tell us your challenge in a few lines. Within 24h we'll reply with an initial diagnosis and next steps — no strings attached.",
     form: {
-      name: "Name",
-      email: "Email",
+      name: "Your name",
+      email: "Work email",
       company: "Company",
-      message: "How can we help?",
-      submit: "Send message",
+      message: "What challenge do you want to solve?",
+      submit: "Book my diagnosis",
     },
-    successMessage: "Message sent! We'll be in touch shortly.",
+    successMessage:
+      "Got your message! Our team will reach out shortly to schedule your diagnosis.",
   },
   footer: {
-    tagline: "Insightfy — custom systems and AI agents.",
+    tagline: "Insightfy — custom systems and AI agents that actually run.",
     columns: [
       {
         title: "Company",
         links: [
-          { label: "Services", href: "#pilares" },
           { label: "Process", href: "#processo" },
           { label: "Cases", href: "#casos" },
+          { label: "Book a call", href: "#contato" },
         ],
       },
       {
-        title: "Resources",
+        title: "Services",
         links: [
-          { label: "Agents", href: "#agentes" },
-          { label: "Contact", href: "#contato" },
+          { label: "Custom systems", href: "#pilares" },
+          { label: "AI agents", href: "#agentes" },
+          { label: "Our own products", href: "#pilares" },
+        ],
+      },
+      {
+        title: "Contact",
+        links: [
+          { label: "Book a diagnosis", href: "#contato" },
+          { label: "insightfy.com.br", href: "#contato" },
         ],
       },
     ],

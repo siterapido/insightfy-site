@@ -1,0 +1,46 @@
+# Dependencies (reinstalled inside the image)
+node_modules
+**/node_modules
+
+# Build outputs
+.next
+**/.next
+out
+**/out
+dist
+**/dist
+build
+**/build
+
+# Turbo cache
+.turbo
+**/.turbo
+
+# Git
+.git
+.gitignore
+
+# Env (secrets must not enter the build context / image)
+.env
+.env.*
+!.env.example
+
+# Docs & references (not needed at build time)
+docs
+.refs
+
+# OS / editor
+.DS_Store
+.vscode
+.idea
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Docker / deploy files themselves
+Dockerfile
+.dockerignore
+docker-compose.yml
+Caddyfile
