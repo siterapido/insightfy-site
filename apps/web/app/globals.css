@@ -16,3 +16,33 @@
     @apply bg-accent/30 text-text;
   }
 }
+
+/* Blog long-form measure helpers (components own most typography). */
+@layer components {
+  .prose-blog {
+    @apply text-base;
+  }
+
+  .prose-blog :where(table) {
+    @apply mt-6 w-full border-collapse text-left text-sm text-muted;
+  }
+
+  .prose-blog :where(th) {
+    @apply border-b border-border px-3 py-2 font-mono text-xs uppercase tracking-wider text-text;
+  }
+
+  .prose-blog :where(td) {
+    @apply border-b border-border/60 px-3 py-2 align-top;
+  }
+
+  .prose-blog :where(tr:last-child td) {
+    @apply border-b-0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-safe\:group-hover\:-translate-y-1:hover,
+  .motion-safe\:group-hover\:-translate-y-0\.5:hover {
+    transform: none;
+  }
+}

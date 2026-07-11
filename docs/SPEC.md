@@ -133,7 +133,7 @@ insightfy-site/
 - Backend do formulário de contato (fica stub).
 - Implementação do CRM e do banco (só esqueleto).
 - Autenticação.
-- CMS / blog.
+- CMS (blog é MDX no repositório; ver `docs/superpowers/specs/2026-07-11-blog-design.md`).
 - Analytics (pode entrar depois).
 
 ---

@@ -2,6 +2,7 @@
  * Footer — tagline, link columns, copyright.
  * STABLE CONTRACT: export `Footer`, props { dict: Dictionary["footer"]; locale }.
  */
+import Link from "next/link";
 import { Container } from "@insightfy/ui";
 import { Logo } from "@/components/Logo";
 import type { Dictionary, Locale } from "@/i18n/types";
@@ -9,6 +10,12 @@ import type { Dictionary, Locale } from "@/i18n/types";
 export interface FooterProps {
   dict: Dictionary["footer"];
   locale: Locale;
+}
+
+function resolveFooterHref(href: string, locale: Locale): string {
+  if (href.startsWith("#")) return `/${locale}${href}`;
+  if (href.startsWith("/")) return `/${locale}${href}`;
+  return href;
 }
 
 function SocialIcon({ name }: { name: "github" | "linkedin" | "x" }) {
@@ -40,7 +47,7 @@ const socials = [
   { label: "X", href: "https://x.com", icon: "x" as const },
 ];
 
-export function Footer({ dict }: FooterProps) {
+export function Footer({ dict, locale }: FooterProps) {
   return (
     <footer className="border-t border-border bg-surface/30 py-14">
       <Container className="flex flex-col gap-10">
@@ -58,16 +65,28 @@ export function Footer({ dict }: FooterProps) {
                 {col.title}
               </h4>
               <ul className="flex flex-col gap-2">
-                {col.links.map((link) => (
-                  <li key={link.href}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-muted transition-colors hover:text-text"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
+                {col.links.map((link) => {
+                  const href = resolveFooterHref(link.href, locale);
+                  return (
+                    <li key={`${col.title}-${link.href}-${link.label}`}>
+                      {href.startsWith("/") ? (
+                        <Link
+                          href={href}
+                          className="text-sm text-muted transition-colors hover:text-text"
+                        >
+                          {link.label}
+                        </Link>
+                      ) : (
+                        <a
+                          href={href}
+                          className="text-sm text-muted transition-colors hover:text-text"
+                        >
+                          {link.label}
+                        </a>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}

@@ -1,0 +1,72 @@
+---
+title: "Agent-powered support: ticket to reply in seconds (without losing the human)"
+description: "How to design triage and first response with AI agents without turning support into a lottery — and without removing human judgment."
+date: "2026-07-01"
+category: casos-ia
+tags: [support, agents, cases]
+translationKey: agent-powered-support
+---
+
+Support is the favorite demo use case for AI — and also where projects die when the agent "almost gets it right" and the customer feels coldness or factual error.
+
+The right goal is not to **replace** the team. It is to **compress repetitive work** and keep humans on empathy, exceptions, and relationship.
+
+## A flow that usually works
+
+1. **Ingest** — ticket, email, or chat hits the queue.
+2. **Classify** — intent, urgency, product, sentiment.
+3. **Retrieve context** — order, contract, knowledge base, history.
+4. **Draft a reply** or **take an action** (invoice copy, status, reset) within policy.
+5. **Handoff** — if confidence is low, value is high, or policy requires it, a human takes over **with context already assembled**.
+6. **Operational learning** — escalated cases improve KB and rules, not only blind fine-tuning.
+
+## Where the agent truly saves time
+
+- status questions and invoice copies
+- questions covered by the knowledge base
+- routing to the right queue
+- summarizing history before a human opens the case
+
+## Where humans stay in charge
+
+- chargebacks and disputes
+- enterprise / critical accounts
+- complaints with reputational risk
+- any irreversible action without confirmation
+
+Practical rule: if the action **cannot be undone with one click**, the agent proposes; the human confirms — until accuracy and volume justify more autonomy.
+
+## Metrics that matter
+
+Ignore "bot satisfaction" as the only number. Track:
+
+- **time to first response**
+- **% resolved without a human** (with sampled quality)
+- **reopen rate**
+- **correct vs incorrect escalations**
+- **CSAT/NPS on agent-touched cases** (vs baseline)
+
+If response time drops and reopens rise, you only pushed the problem downstream.
+
+```text
+[INIT] ticket #4821 priority=high
+[SCAN] intent=invoice_copy conf=0.91
+[GEN] draft from KB + ERP invoice
+[DONE] reply sent · 1.2s
+[WARN] ticket #4822 intent=tax_dispute → human handoff
+```
+
+<CtaInline />
+
+## Common traps
+
+- Training only on tone of voice while ignoring ERP integration.
+- Hiding the agent ("never say it is AI") instead of being transparent and useful.
+- Enabling write access on day one without sample review.
+- Measuring only headcount cost instead of support quality.
+
+## How Insightfy approaches it
+
+On support projects we start with an **intent and exception map**, wire systems of record, then enable the agent loop with logs and handoff. The "agent in the terminal" on our landing page is not theater: it is the observability standard we require in production.
+
+If your team still answers status and invoice-copy tickets by hand, there is a high chance the first agent pays for the diagnosis on its own.

@@ -1,0 +1,71 @@
+---
+title: "What a real AI agent is — and what is just a chatbot with marketing"
+description: "How to tell an agent that acts on your process from a generic chat with a pretty prompt. Practical criteria for founders and technical teams."
+date: "2026-06-15"
+category: agentes
+tags: [agents, ai, production]
+featured: true
+translationKey: what-is-an-ai-agent
+---
+
+Chatbots with a persona and a polished prompt became "agents" in almost every pitch. The problem is not marketing — it is deciding based on it.
+
+An **AI agent**, in the sense that matters for your business, is not just a model that returns text. It is a system that **reads context, decides the next step, and acts** on real tools (tickets, ERP, CRM, email, databases), with clear limits and an audit trail.
+
+## Chatbot vs agent
+
+| | Chatbot | Agent |
+|---|---|---|
+| Input | User message | Event + process state |
+| Output | Text | Action (and text when needed) |
+| Memory | Short session | Business state (order, ticket, customer) |
+| Tools | Rare or search-only | APIs, queues, human handoff |
+| Success | "Good answer" | "Case resolved / task done" |
+
+If the system only chats and never writes, classifies, escalates, or executes, you have a **conversation assistant** — useful, but not an operational agent.
+
+## What an agent needs
+
+1. **Explicit goal** — close triage, issue billing, sync inventory. Not "help the user".
+2. **Permissioned tools** — what it can read and write, with failure policy.
+3. **Escalation policy** — when it stops and calls a human (high value, legal doubt, extreme sentiment).
+4. **Observability** — logs, cost per run, success rate, known failure modes.
+5. **Stateful loop** — not a single prompt; a flow with steps and checkpoints.
+
+Without item 4, you are flying blind. Without item 3, you are playing with risk.
+
+## Signs of "chatbot with marketing"
+
+- Demo only in a playground, never on the real system of record.
+- "Works with any PDF" with no hallucination policy.
+- Zero integration with your source of truth.
+- "Replaces the team in 30 days" with no exception map.
+- No metrics beyond "users liked it".
+
+## When it is actually worth it
+
+Agents shine on processes that are **repetitive, reasonably stable, and high volume**. Examples:
+
+- support triage and first response
+- consolidating data from many sources
+- ERP ↔ CRM ↔ store sync
+- pre-filling records and billing steps
+
+They do **not** replace strategic judgment, complex negotiation, or unsupervised compliance work.
+
+<CtaInline />
+
+## How Insightfy defines "production ready"
+
+Production, for us, means:
+
+- the agent runs on the **real process path** (not an isolated sandbox)
+- there is **human handoff** with context
+- there are **business metrics** (time to first response, % resolved without humans, critical errors)
+- there is **rollback** or a degraded mode if the model or API fails
+
+If you are evaluating a vendor (or building in-house), ask for an end-to-end execution log — not the deck.
+
+## Next step
+
+Before you "buy an agent", pick **one process** and define success in one measurable sentence. The next article covers how to choose that first process without getting lost in hype.

@@ -8,6 +8,7 @@ export const pt: Dictionary = {
       { label: "Agentes", href: "#agentes" },
       { label: "Processo", href: "#processo" },
       { label: "Casos", href: "#casos" },
+      { label: "Blog", href: "/blog" },
     ],
     cta: "Agendar conversa",
   },
@@ -201,6 +202,7 @@ export const pt: Dictionary = {
         links: [
           { label: "Processo", href: "#processo" },
           { label: "Casos", href: "#casos" },
+          { label: "Blog", href: "/blog" },
           { label: "Agendar conversa", href: "#contato" },
         ],
       },
@@ -221,5 +223,43 @@ export const pt: Dictionary = {
       },
     ],
     copyright: "© 2026 Insightfy. Todos os direitos reservados.",
+  },
+  blog: {
+    navLabel: "Blog",
+    hero: {
+      eyebrow: "// Blog",
+      title: "IA & agentes, sem enrolação",
+      subtitle:
+        "Guias práticos para founders e times que querem agentes de verdade em produção — e resultados mensuráveis.",
+    },
+    categories: {
+      all: "Todos",
+      agentes: "Agentes",
+      automacao: "Automação",
+      "casos-ia": "Casos IA",
+    },
+    readingTime: "{n} min de leitura",
+    related: "Continue lendo",
+    ctaInline: {
+      title: "Quer um agente assim no seu processo?",
+      body: "Em um diagnóstico curto mapeamos onde automação com IA gera retorno de verdade — sem pitch genérico.",
+      cta: "Agendar diagnóstico",
+    },
+    ctaEnd: {
+      title: "Pronto para tirar o agente do slide e colocar em produção?",
+      body: "Conte o processo que dói hoje. Em até 24h retornamos com um caminho claro.",
+      cta: "Agendar conversa",
+    },
+    empty: "Nenhum post nesta categoria ainda.",
+    backToBlog: "Ver todos os posts",
+    featuredLabel: "Destaque",
+    meta: {
+      indexTitle: "Blog — IA & agentes",
+      indexDescription:
+        "Artigos da Insightfy sobre agentes de IA, automação e casos reais em produção.",
+      categoryTitle: "Blog · {category}",
+      categoryDescription:
+        "Posts sobre {category} — agentes de IA e automação com engenharia de verdade.",
+    },
   },
 };

@@ -1,0 +1,80 @@
+---
+title: "How to choose the first process to automate with agents"
+description: "A simple framework so you do not start with the glamour use case — you start with what pays back and can ship to production."
+date: "2026-06-22"
+category: automacao
+tags: [automation, agents, process]
+translationKey: first-process-to-automate
+---
+
+The most common mistake when adopting AI agents is starting with the process that **looks best on a slide**, not the one operations can support. Result: endless pilot, zero ROI, skeptical team.
+
+This guide is a filter. Use it in a 45-minute meeting with the people who live the process every day.
+
+## Four axes
+
+Score each candidate from **1 to 5** (5 = excellent for a first agent).
+
+### 1. Volume and repetition
+
+Are there tens or hundreds of similar cases per week? If every case is unique, automation costs more than it saves.
+
+### 2. Rule clarity
+
+Can you describe "if X then Y" for most cases? If every ticket becomes a philosophy debate, automate **after** you document the process — or only the mechanical slice.
+
+### 3. Cost of error
+
+What happens if the agent is wrong? A misclassified triage email is recoverable. An unsupervised tax posting is not. Prefer high volume and **low risk** in cycle one.
+
+### 4. Available data and systems
+
+Is there an API, export, inbox, or queue? Without the system of record, the agent is theater. Integration is half the work (sometimes more).
+
+## Quick matrix
+
+Sum the scores. Prioritize **16–20** with cost-of-error risk that is still acceptable.
+
+| Process (example) | Vol. | Rules | Low risk* | Data | Total |
+|---|---|---|---|---|---|
+| L1 ticket triage | 5 | 4 | 4 | 5 | 18 |
+| Weekly sales rollup | 4 | 4 | 5 | 4 | 17 |
+| Contract negotiation | 2 | 2 | 1 | 3 | 8 |
+
+\*Higher score = lower business risk if the agent fails.
+
+## Anti-patterns
+
+- Starting with a CEO-bot that "answers anything".
+- Automating a process nobody documented.
+- Picking a flow with 14 systems and no integration owner.
+- Measuring success only by "wow in the demo".
+
+## Define success in one sentence
+
+Good examples:
+
+- "Cut first-response time from 4h to under 5 minutes on 70% of L1 tickets."
+- "Remove 80% of Monday-morning spreadsheet consolidation work."
+
+Bad examples:
+
+- "Improve support with AI."
+- "Be more innovative."
+
+<CtaInline />
+
+## Pilot scope (2–6 weeks)
+
+1. **One** process, **one** channel, **one** success metric.
+2. Human in the loop from day one (approval or sample review).
+3. Log every decision and action.
+4. Weekly review: what the agent got right, escalated, or invented.
+
+If metrics do not move in six weeks, the problem is rarely "the model". It is process, data, or scope.
+
+## After the first win
+
+Once one agent is in production with honest metrics, the second process is cheaper: you already have patterns for observability, handoff, and integration. Resist multiplying agents before that.
+
+Need help ranking your team's candidates? That is exactly what we do in a diagnosis call.

@@ -1,0 +1,72 @@
+---
+title: "Atendimento com agente: do ticket à resposta em segundos (sem perder o humano)"
+description: "Como desenhar triagem e primeira resposta com agentes de IA sem transformar o suporte em loteria — e sem demitir o julgamento humano."
+date: "2026-07-01"
+category: casos-ia
+tags: [atendimento, agentes, casos]
+translationKey: agent-powered-support
+---
+
+Suporte é o caso de uso preferido de demos de IA — e também onde projetos morrem quando o agente "quase acerta" e o cliente sente frieza ou erro factual.
+
+O objetivo certo não é **substituir** o time. É **comprimir o trabalho repetitivo** e deixar humanos no que exige empatia, exceção e relacionamento.
+
+## O fluxo que costuma funcionar
+
+1. **Ingestão** — ticket, e-mail ou chat entra na fila.
+2. **Classificação** — intenção, urgência, produto, sentimento.
+3. **Recuperação de contexto** — pedido, contrato, base de conhecimento, histórico.
+4. **Rascunho de resposta** ou **ação** (2ª via, status, reset) dentro de políticas.
+5. **Handoff** — se confiança baixa, valor alto ou política exige, humano assume **com o contexto montado**.
+6. **Aprendizado operacional** — casos escalados viram melhoria de KB e regras, não só fine-tuning cego.
+
+## Onde o agente ganha tempo de verdade
+
+- perguntas de status e 2ª via
+- dúvidas cobertas pela base de conhecimento
+- roteamento para a fila certa
+- resumo do histórico antes do humano abrir o caso
+
+## Onde o humano fica no comando
+
+- chargebacks e disputas
+- clientes enterprise / contas críticas
+- reclamações com risco reputacional
+- qualquer ação irreversível sem confirmação
+
+Regra prática: se a ação **não pode ser desfeita com um clique**, o agente sugere; o humano confirma — até a confiança e o volume de acerto justificarem mais autonomia.
+
+## Métricas que importam
+
+Esqueça "satisfação com o bot" como único número. Acompanhe:
+
+- **tempo de primeira resposta**
+- **% resolvido sem humano** (com qualidade amostrada)
+- **taxa de reabertura**
+- **escalonamentos corretos vs. incorretos**
+- **CSAT/NPS nos casos tocados por agente** (comparado ao baseline)
+
+Se o tempo de resposta cai e a reabertura sobe, você só empurrou problema para frente.
+
+```text
+[INIT] ticket #4821 prioridade=alta
+[SCAN] intenção=2a_via_fatura conf=0.91
+[GEN] rascunho com base na KB + fatura do ERP
+[DONE] resposta enviada · 1.2s
+[WARN] ticket #4822 intenção=disputa_fiscal → handoff humano
+```
+
+<CtaInline />
+
+## Armadilhas comuns
+
+- Treinar só no tom de voz e ignorar integração com o ERP.
+- Esconder o agente ("nunca diga que é IA") em vez de ser transparente e útil.
+- Liberar escrita em produção no dia 1 sem revisão amostral.
+- Medir só custo de headcount em vez de qualidade do atendimento.
+
+## Como a Insightfy aborda
+
+Em projetos de atendimento, começamos pelo **mapa de intenções e exceções**, conectamos as fontes de verdade e só então ligamos o loop do agente com logs e handoff. O "agente no terminal" que você vê na nossa landing não é teatro: é o padrão de observabilidade que exigimos em produção.
+
+Se o seu time ainda responde status e 2ª via à mão, há uma chance alta de o primeiro agente pagar o diagnóstico sozinho.

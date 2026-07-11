@@ -1,8 +1,7 @@
-import type { Config } from "tailwindcss";
-
 /**
  * Insightfy design tokens as a Tailwind preset.
  * Consumed by apps/web and packages/ui via `presets: [insightfyPreset]`.
+ * Typed loosely so apps resolve Tailwind types from their own install.
  */
 const preset = {
   theme: {
@@ -31,6 +30,6 @@ const preset = {
       },
     },
   },
-} satisfies Partial<Config>;
+};
 
 export default preset;

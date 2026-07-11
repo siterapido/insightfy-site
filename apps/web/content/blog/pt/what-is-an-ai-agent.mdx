@@ -1,0 +1,71 @@
+---
+title: "O que é um agente de IA (de verdade) — e o que é só chatbot com marketing"
+description: "Como distinguir um agente que age no seu processo de um chat genérico com prompt bonito. Critérios práticos para founders e times técnicos."
+date: "2026-06-15"
+category: agentes
+tags: [agentes, ia, producao]
+featured: true
+translationKey: what-is-an-ai-agent
+---
+
+Chatbots com uma persona e um prompt bem escrito viraram "agentes" em quase todo pitch. O problema não é o marketing — é decidir com base nele.
+
+Um **agente de IA**, no sentido que importa para o seu negócio, não é só um modelo que responde texto. É um sistema que **observa contexto, decide o próximo passo e age** em ferramentas reais (ticket, ERP, CRM, e-mail, banco), com limites claros e trilha auditável.
+
+## Chatbot vs agente
+
+| | Chatbot | Agente |
+|---|---|---|
+| Entrada | Mensagem do usuário | Evento + estado do processo |
+| Saída | Texto | Ação (e, se preciso, texto) |
+| Memória | Sessão curta | Estado de negócio (pedido, ticket, cliente) |
+| Ferramentas | Raras ou só busca | APIs, filas, human handoff |
+| Critério de sucesso | "Resposta boa" | "Caso resolvido / tarefa concluída" |
+
+Se o sistema só conversa e nunca grava, classifica, escala ou executa, você tem um **assistente de conversa** — útil, mas não um agente operacional.
+
+## O que um agente precisa ter
+
+1. **Objetivo explícito** — fechar triagem, emitir cobrança, sincronizar estoque. Não "ajudar o usuário".
+2. **Ferramentas com permissão** — o que ele pode ler e escrever, com política de falha.
+3. **Política de escalonamento** — quando para e chama humano (valor alto, dúvida jurídica, sentimento extremo).
+4. **Observabilidade** — logs, custo por execução, taxa de acerto, casos em que errou.
+5. **Loop com estado** — não um único prompt; um fluxo com passos e checkpoints.
+
+Sem o item 4, você está voando no escuro. Sem o 3, você está brincando com risco.
+
+## Sinais de "chatbot com marketing"
+
+- Demo só no playground, nunca no sistema de verdade.
+- "Funciona com qualquer PDF" sem política de alucinação.
+- Zero integração com o sistema de registro (source of truth).
+- Promessa de "substitui o time" em 30 dias, sem mapa de exceções.
+- Nenhum métrica além de "usuários gostaram".
+
+## Quando vale a pena de verdade
+
+Agentes brilham em processos **repetitivos, com regras razoavelmente estáveis e volume**. Exemplos:
+
+- triagem e primeira resposta de suporte
+- consolidação de dados de várias fontes
+- sync entre ERP, CRM e loja
+- pré-preenchimento de cadastros e cobranças
+
+Eles **não** substituem julgamento estratégico, negociação complexa ou compliance sem supervisão.
+
+<CtaInline />
+
+## Como a Insightfy define "pronto para produção"
+
+Produção, para nós, significa:
+
+- o agente roda no **caminho real do processo** (não num sandbox isolado)
+- há **handoff** para humano com contexto
+- há **métricas** ligadas a negócio (tempo de primeira resposta, % resolvido sem humano, erro crítico)
+- há **rollback** ou modo degradado se o modelo ou a API falhar
+
+Se você está avaliando um fornecedor (ou construindo internamente), peça o log de uma execução de ponta a ponta — não o deck.
+
+## Próximo passo
+
+Antes de "comprar um agente", escolha **um processo** e defina o sucesso em uma frase mensurável. O próximo artigo cobre exatamente como escolher esse primeiro processo sem se perder em hype.

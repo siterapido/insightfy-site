@@ -8,6 +8,7 @@ export const en: Dictionary = {
       { label: "Agents", href: "#agentes" },
       { label: "Process", href: "#processo" },
       { label: "Cases", href: "#casos" },
+      { label: "Blog", href: "/blog" },
     ],
     cta: "Book a call",
   },
@@ -200,6 +201,7 @@ export const en: Dictionary = {
         links: [
           { label: "Process", href: "#processo" },
           { label: "Cases", href: "#casos" },
+          { label: "Blog", href: "/blog" },
           { label: "Book a call", href: "#contato" },
         ],
       },
@@ -220,5 +222,43 @@ export const en: Dictionary = {
       },
     ],
     copyright: "© 2026 Insightfy. All rights reserved.",
+  },
+  blog: {
+    navLabel: "Blog",
+    hero: {
+      eyebrow: "// Blog",
+      title: "AI & agents, without the hype",
+      subtitle:
+        "Practical guides for founders and teams who want real agents in production — and measurable outcomes.",
+    },
+    categories: {
+      all: "All",
+      agentes: "Agents",
+      automacao: "Automation",
+      "casos-ia": "AI cases",
+    },
+    readingTime: "{n} min read",
+    related: "Keep reading",
+    ctaInline: {
+      title: "Want an agent like this in your process?",
+      body: "In a short diagnosis we map where AI automation actually returns value — no generic pitch.",
+      cta: "Book a diagnosis",
+    },
+    ctaEnd: {
+      title: "Ready to take the agent off the slide and into production?",
+      body: "Tell us the process that hurts today. Within 24h we come back with a clear path.",
+      cta: "Book a call",
+    },
+    empty: "No posts in this category yet.",
+    backToBlog: "View all posts",
+    featuredLabel: "Featured",
+    meta: {
+      indexTitle: "Blog — AI & agents",
+      indexDescription:
+        "Insightfy articles on AI agents, automation, and real production cases.",
+      categoryTitle: "Blog · {category}",
+      categoryDescription:
+        "Posts about {category} — AI agents and automation with real engineering.",
+    },
   },
 };

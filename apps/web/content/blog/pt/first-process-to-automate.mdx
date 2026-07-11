@@ -1,0 +1,80 @@
+---
+title: "Como escolher o primeiro processo para automatizar com agentes"
+description: "Um framework simples para não começar pelo caso mais glamouroso — e sim pelo que paga a conta e cabe em produção."
+date: "2026-06-22"
+category: automacao
+tags: [automacao, agentes, processo]
+translationKey: first-process-to-automate
+---
+
+O erro mais comum ao adotar agentes de IA é começar pelo processo **mais impressionante no slide** e não pelo que a operação aguenta. Resultado: piloto eterno, zero ROI, time cético.
+
+Este guia é um filtro. Use-o em uma reunião de 45 minutos com quem vive o processo no dia a dia.
+
+## Os quatro eixos
+
+Pontue cada candidato de **1 a 5** (5 = excelente para um primeiro agente).
+
+### 1. Volume e repetição
+
+Há dezenas ou centenas de ocorrências por semana com o mesmo formato? Se o caso é raro e único, automação custa mais do que resolve.
+
+### 2. Clareza de regras
+
+Você consegue descrever "se X, então Y" para a maioria dos casos? Se cada ticket vira debate filosófico, automatize **depois** de documentar o processo — ou só a parte mecânica.
+
+### 3. Custo do erro
+
+O que acontece se o agente errar? Um e-mail de triagem mal classificado é recuperável. Um lançamento fiscal sem revisão, não. Prefira alto volume e **baixo risco** no primeiro ciclo.
+
+### 4. Dados e sistemas disponíveis
+
+Existe API, export, caixa de e-mail, fila? Sem acesso ao sistema de registro, o agente vira teatro. Integração é metade do trabalho (às vezes mais).
+
+## Matriz rápida
+
+Some as notas. Priorize o que fica em **16–20** com custo de erro ≤ 3.
+
+| Processo (exemplo) | Vol. | Regras | Risco invertido* | Dados | Total |
+|---|---|---|---|---|---|
+| Triagem de tickets L1 | 5 | 4 | 4 | 5 | 18 |
+| Resumo semanal de vendas | 4 | 4 | 5 | 4 | 17 |
+| Negociação de contrato | 2 | 2 | 1 | 3 | 8 |
+
+\*Aqui "risco invertido" = 5 quando o impacto do erro é baixo.
+
+## Anti-padrões
+
+- Começar pelo CEO-bot que "responde qualquer coisa".
+- Automatizar um processo que ninguém documentou.
+- Escolher o fluxo com 14 sistemas sem dono de integração.
+- Medir sucesso só por "wow na demo".
+
+## Defina sucesso em uma frase
+
+Exemplos bons:
+
+- "Reduzir tempo de primeira resposta de 4h para &lt; 5 min em 70% dos tickets L1."
+- "Eliminar 80% do trabalho manual de consolidar planilhas na segunda de manhã."
+
+Exemplos ruins:
+
+- "Melhorar o atendimento com IA."
+- "Ser mais inovadores."
+
+<CtaInline />
+
+## Escopo do piloto (2–6 semanas)
+
+1. **Um** processo, **um** canal, **um** critério de sucesso.
+2. Humano no loop desde o dia 1 (aprovação ou revisão amostral).
+3. Log de toda decisão e ação.
+4. Revisão semanal: o que o agente acertou, o que escalou, o que inventou.
+
+Se em seis semanas não houver movimento nas métricas, o problema quase nunca é "o modelo". É processo, dado ou escopo.
+
+## Depois do primeiro
+
+Com um agente em produção e métricas honestas, o segundo processo fica mais barato: você já tem padrões de observabilidade, handoff e integração. Resista à tentação de "multiplicar agentes" antes disso.
+
+Quer ajuda para ranquear os candidatos do seu time? É exatamente o tipo de conversa que fazemos no diagnóstico.

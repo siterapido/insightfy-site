@@ -106,4 +106,39 @@ export interface Dictionary {
     columns: FooterColumn[];
     copyright: string;
   };
+  blog: {
+    navLabel: string;
+    hero: {
+      eyebrow: string;
+      title: string;
+      subtitle: string;
+    };
+    categories: {
+      all: string;
+      agentes: string;
+      automacao: string;
+      "casos-ia": string;
+    };
+    readingTime: string;
+    related: string;
+    ctaInline: {
+      title: string;
+      body: string;
+      cta: string;
+    };
+    ctaEnd: {
+      title: string;
+      body: string;
+      cta: string;
+    };
+    empty: string;
+    backToBlog: string;
+    featuredLabel: string;
+    meta: {
+      indexTitle: string;
+      indexDescription: string;
+      categoryTitle: string;
+      categoryDescription: string;
+    };
+  };
 }
